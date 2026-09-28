@@ -1,16 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Cloud Web App</title>
+    <style>
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eef2f3;
+            color: #333333;
+            margin: 0;
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            max-width: 480px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        nav {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 15px;
+        }
+        nav a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            color: #1a2a3a;
+            font-size: 26px;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+        h2 {
+            color: #2bc48a;
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+        .student-details {
+            background-color: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 15px;
+            text-align: left;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .student-details p {
+            margin: 6px 0;
+            font-size: 15px;
+        }
+        .info-text {
+            font-size: 15px;
+            color: #555555;
+            margin: 20px 0;
+        }
+        
+        .cloud-meta {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px dashed #cccccc;
+            font-size: 13px;
+            color: #666666;
+            text-align: left;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
-    <h1>My Cloud Web App</h1>
-    <h2>Welcome to Platform Technologies!</h2>
-    <p>Name: Ivan Andrew E. Berame</p>
-    <p>Course: BS Information Technology</p>
-    <hr>
-    <p>
-        This application is hosted on a cloud platform.
-    </p>
+
+    <div class="container">
+       
+        <nav>
+            <a href="#">Home</a> | <a href="#">About</a> | <a href="#">Contact</a>
+        </nav>
+
+        <h1>My Cloud Web App</h1>
+        <h2>Welcome to Platform Technologies!</h2>
+        
+        <div class="student-details">
+            <p><strong>Name:</strong> Ivan Andrew E. Berame</p>
+            <p><strong>Course:</strong> BS Information Technology</p>
+        </div>
+
+        <p class="info-text">This application is hosted on a cloud platform.</p>
+
+        
+        <div class="cloud-meta">
+            <div>Cloud Service Model: <strong>PaaS</strong></div>
+            <div>Application Status: <strong style="color: #2bc48a;">Deployed</strong></div>
+            <div style="margin-top: 5px; font-style: italic; color: #999999;">Platform Technologies Laboratory</div>
+        </div>
+    </div>
+
 </body>
 </html>
